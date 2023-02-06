@@ -1,0 +1,14 @@
+A triple
+A double B triple
+A double B double
+A single C double D double E triple
+A single C double D double E double
+A single C single D double
+A single C single D single
+A dif F triple
+A dif F double G triple
+A dif F double G double H triple
+A dif F double G double H double
+A dif F single H double
+A dif F single H single I double
+A dif F single H single I single

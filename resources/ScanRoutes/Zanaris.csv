@@ -1,0 +1,13 @@
+A triple,"1, 2, 3, 4"
+A double B triple,10
+A double B double C triple,"5, 6, 7"
+A double B double C double D triple,"8, 9, 10"
+A double B double C double D double E triple,11
+A double B double C double D double E double,12
+A double B double C double D single,"14, 15"
+A double B double C single D double,13
+A double B double C single D single,16
+A double B single,17
+A single F triple,"18, 19"
+A single F double,"18, 19"
+A single F single,"20, 21, 22"

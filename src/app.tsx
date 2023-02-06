@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
-import * as a1lib from "@alt1/base"
+import * as alt1 from "@alt1/base"
 
 type ScanResult = "triple" | "double" | "single" | "none"
 
@@ -9,7 +9,7 @@ type Node = {
 } & Record<ScanResult, number[]>
 
 type CheckMap = {
-    node: typeof Node["name"]
+    node: (typeof Node)["name"]
     triple?: CheckMap
     double?: CheckMap
     single?: CheckMap
@@ -24,7 +24,7 @@ type Location = {
 }
 
 type Step = {
-    node?: typeof Node["name"]
+    node?: (typeof Node)["name"]
     result: ScanResult
 }
 
@@ -297,7 +297,7 @@ const locations: Location[] = [
 
 function App() {
     const [dropdownOpen, setDropdownOpen] = useState(false)
-    const [location, setLocation] = useState<typeof locations[number]>()
+    const [location, setLocation] = useState<(typeof locations)[number]>()
     const [steps, setSteps] = useState<Step[]>([])
     const [windowSize, setWindowSize] = useState({
         width: window.innerWidth,
