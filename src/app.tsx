@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
-import * as alt1 from "@alt1/base"
+// import * as alt1 from "@alt1/base"
 
 type ScanResult = "triple" | "double" | "single" | "none"
 
@@ -402,11 +402,11 @@ function App() {
     )
 }
 
-if (window.alt1) {
-    //tell alt1 about the app
-    //this makes alt1 show the add app button when running inside the embedded browser
-    //also updates app settings if they are changed
-    alt1.identifyAppUrl("./appconfig.json")
-}
+// if (window.alt1) {
+//     //tell alt1 about the app
+//     //this makes alt1 show the add app button when running inside the embedded browser
+//     //also updates app settings if they are changed
+//     alt1.identifyAppUrl("./appconfig.json")
+// }
 
 export default App
